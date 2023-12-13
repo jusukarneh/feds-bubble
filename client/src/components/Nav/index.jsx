@@ -56,10 +56,10 @@ function Nav() {
                
                 <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div className="navbar-nav ml-auto py-0">
-                        <a href="#Home" onClick={() => handlePageChange('Home')} className="nav-item nav-link active"> Home  </a>
+                        <a href="/" onClick={() => handlePageChange('Home')} className="nav-item nav-link active"> Welcome  </a>
                         
                       
-                        <a href="#Products" onClick={() => handlePageChange('menu')} className="nav-item nav-link">    menu </a>
+                        <a href="/menu" onClick={() => handlePageChange('menu')} className="nav-item nav-link">    Menu </a>
                     </div>
                     <a href="index.html" className="navbar-brand mx-5 d-none d-lg-block">
                         <h1 className="m-0 display-4 title-color"><span className="title-secondary-color"></span></h1>
