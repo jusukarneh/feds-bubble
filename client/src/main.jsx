@@ -11,8 +11,8 @@ import Signup from './pages/Signup';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 import 'semantic-ui-css/semantic.min.css';
-import Review from './pages/Review.jsx'
-
+import Review from './pages/Review.jsx';
+import About from './pages/About.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -43,8 +43,13 @@ const router = createBrowserRouter([
       },{
         path: '/review',
         element: <Review/>
-      }
-    ]
+      },{
+        path: '/about',
+        element: <About/>
+      },
+    ]  
+      
+    
   }
 ]);
 

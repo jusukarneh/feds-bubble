@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, {  useState } from 'react'
 import {
   Button,
   Checkbox,
@@ -15,13 +15,15 @@ const options = [
   { key: 'o', text: 'Other', value: 'other' },
 ]
 
-class FormExampleFieldControl extends Component {
-  state = {}
+function FormExampleFieldControl (){
 
-  handleChange = (e, { value }) => this.setState({ value })
+const[formState, setformState]= useState({
+  rating:"", feedback:""
+})
+const  handleChange = e => setformState({...formState,[e.target.name]:e.target.value })
 
-  render() {
-    const { value } = this.state
+ 
+   
     return (
         <div className='form' >
 
@@ -34,35 +36,35 @@ class FormExampleFieldControl extends Component {
             control={Radio}
             label='One'
             value='1'
-            checked={value === '1'}
-            onChange={this.handleChange}
+            checked={formState.rating === '1'}
+            onChange={handleChange}
           />
           <Form.Field
             control={Radio}
             label='Two'
             value='2'
-            checked={value === '2'}
-            onChange={this.handleChange}
+            checked={ formState.rating === '2'}
+            onChange={handleChange}
           />
           <Form.Field
             control={Radio}
             label='Three'
             value='3'
-            checked={value === '3'}
-            onChange={this.handleChange}
+            checked={formState.rating  === '3'}
+            onChange={handleChange}
           />
           <Form.Field
             control={Radio}
             label='Four'
             value='4'
-            checked={value === '4'}
-            onChange={this.handleChange}
+            checked={formState.rating === '4'}
+            onChange={handleChange}
           /><Form.Field
           control={Radio}
           label='Five'
           value='5'
-          checked={value === '5'}
-          onChange={this.handleChange}
+          checked={ formState.rating === '5'}
+          onChange={handleChange}
         />
         </Form.Group>
         <Form.Field
@@ -70,13 +72,18 @@ class FormExampleFieldControl extends Component {
           label='Feedback'
           placeholder='Tell us about your experience...'
           className='textname'
+          onchange={handleChange}
+          name= "feedback"
+          value={
+            formState.feedback
+          }
         />
         
         <Form.Field control={Button}>Submit</Form.Field>
       </Form>
       </div>
     )
-  }
+  
 }
 
 export default FormExampleFieldControl

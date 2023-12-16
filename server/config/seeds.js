@@ -41,88 +41,7 @@ db.once('open', async () => {
       price: 6.50,
       amount: 3
     },
-    {
-      name: 'Buffalo chicken Lumpia (small)',
-      description:
-        '',
-      image: '',
-      category: categories[0]._id,
-      price: 6.50,
-      quantity: 3
-    },  
-    {
-      name: 'Teriyaki Chicken Lumpia (small)',
-      description:
-        '',
-      image: '',
-      category: categories[0]._id,
-      price: 6.50,
-      quantity: 3
-    },
-    {
-      name: 'Seafood Lumpia (small)',
-      description:
-        'A delicious blend of seafood',
-      image: '',
-      category: categories[0]._id,
-      price: 7.10,
-      quantity: 3
-    },
-    {
-      name: 'Veggie Lumpia (small)',
-      description:
-        '',
-      image: '',
-      category: categories[0]._id,
-      price: 6.50,
-      quantity: 3
-    },
-    {
-      name: 'Jerk Chicken Lumpia (large)',
-      description:
-        '',
-      image: '',
-      category: categories[0]._id,
-      price: 12.00,
-      quantity: 6
-    },
-    {
-      name: 'Beef Lumpia (large)',
-      description:
-        '',
-      image: '',
-      category: categories[0]._id,
-      price: 12.00,
-      quantity: 6
-    },
-    {
-      name: 'Buffalo Lumpia (large)',
-      description:
-        '',
-      image: '',
-      category: categories[0]._id,
-      price: 12.00,
-      quantity: 6
-    },
-    {
-      name: 'Teriyaki Lumpia (large)',
-      description:
-        '',
-      image: '',
-      category: categories[0]._id,
-      price: 12.00,
-      quantity: 6
-    },
-    {
-      name: 'seafood Lumpia (large)',
-      description:
-        '',
-      image: 'A delicious blend of seafood',
-      category: categories[0]._id,
-      price: 6.50,
-      quantity: 3
-    },
-
+    
     {
       name: 'Hamburger',
       category: categories[1]._id,
@@ -131,43 +50,7 @@ db.once('open', async () => {
       image: '',
       price: 8.00,
       quantity: 1
-    },
-    {
-      name: 'Cheeseburger',
-      category: categories[1]._id,
-      description:
-        'Burger seasoned to perfection with choice of cheese cheddar, American, Swiss, pepper jack serve with lettuce tomato onions pickles and kraZ fries.',
-      image: '',
-      price: 9.00,
-      quantity: 1
-    },
-    {
-      name: 'Bacon Cheeseburger',
-      category: categories[1]._id,
-      description:
-        'Burger seasoned to perfection with bacon, choice of cheese serves with lettuce tomato onions pickles and kraZ fries',
-      image: '',
-      price: 11.00,
-      quantity: 1
-    },
-    {
-      name: 'Bacon Cheeseburger',
-      category: categories[1]._id,
-      description:
-        'Burger seasoned to perfection with bacon, choice of cheese serves with lettuce tomato onions pickles and kraZ fries',
-      image: '',
-      price: 11.00,
-      quantity: 1
-    },
-    {
-      name: 'Bacon Cheeseburger',
-      category: categories[1]._id,
-      description:
-        'Burger seasoned to perfection with bacon, choice of cheese serves with lettuce tomato onions pickles and kraZ fries',
-      image: '',
-      price: 11.00,
-      quantity: 1
-    },
+    },    
     {
       name: 'Bacon Cheeseburger',
       category: categories[1]._id,
@@ -196,6 +79,7 @@ db.once('open', async () => {
       price: 11.00,
       quantity: 1
     },
+
     {
       name: 'Grill Salmon',
       category: categories[3]._id,
@@ -205,6 +89,7 @@ db.once('open', async () => {
       price: 15.00,
       quantity: 1
     },
+
     {
       name: 'kraZ Fries',
       category: categories[4]._id,
@@ -222,24 +107,84 @@ db.once('open', async () => {
       price: 7.00,
       quantity: 1
     },
+    
     {
-      name: 'Garlic Herb Potato Wedges',
-      category: categories[4]._id,
+      name: 'Buffalo Wings',
       description:
-        'Potato is cut, fried and seasoned to order.',
-      image:'',
-      price: 4.00,
-      quantity: 10
+        'Buffalo wings is serves with your choice of Hot, Medium or Mild',
+      image: '',
+      category: categories[5]._id,
+      price: 10.50,
+      amount: 6 
     },
     {
-      name: 'House Rice',
-      category: categories[4]._id,
+      name: 'Spicy Teriyaki Wings',
+      category: categories[5]._id,
       description:
-        'Hibachi style fried rice',
+        '',
       image: '',
-      price: 5.00,
+      price: 10.50,
+      quantity: 6
+    },
+    {
+      name: 'Grill Chicken Salad',
+      category: categories[6]._id,
+      description:
+        '',
+      image: '',
+      price: 11.00,
       quantity: 1
-    }
+    },
+    {
+      name: 'fry Chicken salad',
+      category: categories[6]._id,
+      description:
+        '',
+      image: '',
+      price: 12.00,
+      quantity: 1
+    },
+
+    {
+      name: 'Healthy Chicken Soup',
+      category: categories[7]._id,
+      description:
+        'A delicious home made chicken soup.',
+      image: '',
+      price: 6.00,
+      quantity: 1
+    },
+
+    {
+      name: 'Honey Ray Apple Crisp',
+      category: categories[8]._id,
+      description:
+        '',
+      image: '',
+      price: 7.75,
+      quantity: 1
+    },
+    
+    {
+      name: 'Chicken Strips',
+      category: categories[9]._id,
+      description:
+        'hand battered chicken strips serves with fries',
+      image: '',
+      price: 8.50,
+      quantity: 4
+    },
+    {
+      name: 'Sliders',
+      category: categories[9]._id,
+      description:
+        'beef sliders topped with American cheese serves with fries',
+      image: '',
+      price: 8.00,
+      quantity: 3
+    },
+   
+
   ]);
 
   console.log('products seeded');
