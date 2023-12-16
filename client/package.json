@@ -10,6 +10,9 @@
     "preview": "vite preview",
     "test": "vitest"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "@apollo/client": "^3.7.15",
     "@stripe/stripe-js": "^1.54.0",
